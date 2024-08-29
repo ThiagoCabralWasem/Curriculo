@@ -1,1 +1,38 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#terminal {
+    width: 80%;
+    max-width: 600px;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#output {
+    min-height: 300px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+#commandInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #00ff00;
+    font-size: 16px;
+    outline: none;
+}
 
