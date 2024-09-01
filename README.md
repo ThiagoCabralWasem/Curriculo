@@ -7,6 +7,7 @@ Este projeto é uma representação do meu trabalho e habilidades, construído c
 ##🎮 Como Funciona?
 
 Imagine que você está no CMD (Prompt de Comando)! Neste portfólio, você pode digitar comandos como /skills, /projects ou /contact para descobrir mais sobre mim. É uma maneira diferente e envolvente de navegar pelo meu perfil profissional.
+
 💡 ##Funcionalidades
 
     Interatividade: Explore meu portfólio digitando comandos.
