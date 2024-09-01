@@ -1,25 +1,59 @@
-document.getElementById('commandInput').addEventListener('keydown', function(event) {
+// Módulo de comandos
+const commands = {
+    /**
+     * Lista de comandos disponíveis
+     */
+    '/cursos': () => 'Lista de Cursos: HTML, CSS, JavaScript, PHP, Python',
+    '/ajuda': () => 'Comandos disponíveis: /cursos, /github, /curriculo',
+    '/github': () => 'https://github.com/ThiagoCabralWasem',
+    '/curriculo': () => {
+      const link = '../archives/curriculum.pdf'; // caminho para o arquivo ou o link
+      const a = document.createElement('a');
+      a.href = link;
+      a.download = 'curriculum.pdf'; // nome do arquivo que quer realizar o download
+      a.click();
+      return 'Currículo baixado com sucesso!';
+    },
+  };
+  
+  // Módulo de saída
+  const output = {
+    /**
+     Adiciona uma mensagem à div de saída
+     * @param {string} mensagem
+     */
+    imprimir: (mensagem) => {
+      const outputDiv = document.getElementById('output');
+      if (mensagem.startsWith('https://')) {
+        outputDiv.innerHTML += `<div><a href="${mensagem}" target="_blank">${mensagem}</a></div>`;
+      } else {
+        outputDiv.innerHTML += `<div>> ${mensagem}</div>`;
+      }
+      outputDiv.scrollTop = outputDiv.scrollHeight;
+    },
+  };
+  
+  // Módulo de entrada
+  const input = {
+    /**
+     * Processa o comando de entrada
+     * @param {string} input
+     */
+    processar: (input) => {
+      const comando = commands[input.trim().toLowerCase()];
+      if (comando) {
+        output.imprimir(comando());
+      } else {
+        output.imprimir(`Comando "${input}" não reconhecido. Tente /ajuda.`);
+      }
+    },
+  };
+  
+  // Inicialização
+  document.getElementById('commandInput').addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        const input = event.target.value;
-        handleCommand(input);
-        event.target.value = ''; 
+      const inputValor = event.target.value;
+      input.processar(inputValor);
+      event.target.value = '';
     }
-});
-
-function handleCommand(input) {
-    const outputDiv = document.getElementById('output');
-
-
-    switch (input.trim().toLowerCase()) {
-        case '/cursos':
-            outputDiv.innerHTML += '<div>> Lista de Cursos: HTML, CSS, JavaScript, PHP, Python</div>';
-            break;
-        case '/ajuda':
-            outputDiv.innerHTML += '<div>> Comandos disponíveis: /cursos, /ajuda</div>';
-            break;
-        default:
-            outputDiv.innerHTML += `<div>> Comando "${input}" não reconhecido. Tente /ajuda.</div>`;
-    }
-
-    outputDiv.scrollTop = outputDiv.scrollHeight;
-}
+  });
