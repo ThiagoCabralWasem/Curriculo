@@ -1,0 +1,133 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #003366; 
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a {
+    display: block;
+    color: white; 
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: #002244; 
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white; 
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #002244; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003366; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #003399; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #ffffff; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #003366; 
+}
+
+.container p {
+    color: #333; 
+    line-height: 1.6;
+}
+
+
+#terminal {
+    background-color: #000000; 
+    color: #00ff00; 
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#output {
+    min-height: 200px; 
+    margin-bottom: 10px;
+    white-space: pre-wrap; 
+}
+
+#commandInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #222; 
+    color: #00ff00;
+    font-family: monospace; 
+}
+
+#commandInput::placeholder {
+    color: #777; 
+}

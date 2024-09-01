@@ -56,4 +56,15 @@ const commands = {
       input.processar(inputValor);
       event.target.value = '';
     }
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener('mouseover', () => {
+        dropdown.querySelector('a').setAttribute('aria-expanded', 'true');
+    });
+
+    dropdown.addEventListener('mouseout', () => {
+        dropdown.querySelector('a').setAttribute('aria-expanded', 'false');
+    });
+});
   });

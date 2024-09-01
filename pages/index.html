@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Terminal</title>
-    <link rel="icon" href="https://i.pinimg.com/280x280_RS/cb/b2/80/cbb280fa8c687cf3b137df878bf82d08.jpg" type="image/x-icon">
+    <link rel="icon" href="https://i.pinimg.com/280x280_RS/cb/b2/80/cbb280fa8c687cf3b137df878bf82d08.jpg"
+        type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Front End</a>
+            <div class="dropdown-content">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Back End</a>
+            <div class="dropdown-content">
+                <a href="#">Python</a>
+                <a href="#">PHP</a>
+                <a href="#">mySQL</a>
+            </div>
+        </li>
+        <li><a href="#">Sobre mim</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>
+
 <body>
+    <div class="container">
+        <h1>Bem-vindo ao meu Portfólio</h1>
+        <p>Olá! Tudo bem?</p>
+        <p>Meu nome é Thiago Cabral e este é o meu portfólio. Aqui, você encontrará uma amostra do que eu sei e de
+            alguns projetos que desenvolvi, demonstrando meu conhecimento em diversas áreas.</p>
+        <p>Para começar essa jornada, criei um mini CMD que se conecta à nuvem através de um banco de dados MySQL. Este
+            CMD busca informações como nome, certificados e permite o download automático do meu currículo em PDF
+            diretamente no seu computador.</p>
+        <p>Além disso, você encontrará uma barra de navegação com abas de funcionalidades que podem ser exatamente o que
+            você está procurando em um desenvolvedor. Estou sempre em busca de aprimorar meus conhecimentos e estou
+            ansioso para mostrar como posso contribuir com meus projetos e habilidades.</p>
+        <p>Obrigado por visitar meu portfólio!</p>
+    </div>
+
     <div id="terminal">
         <div id="output"></div>
-        <input type="text" id="commandInput" placeholder="Digite /comandos para vizualizar todos disponiveis">
+        <input type="text" id="commandInput" placeholder="Digite /comandos para visualizar todos disponíveis">
     </div>
 
     <script src="../scripts/script.js"></script>
 </body>
+
 </html>
