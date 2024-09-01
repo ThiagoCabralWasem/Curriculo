@@ -14,9 +14,8 @@ Imagine que você está no CMD (Prompt de Comando)! Neste portfólio, você pode
 
 📂 ##Comandos Disponíveis
 
-    /skills - Veja minhas habilidades e competências.
-    /projects - Descubra meus principais projetos.
-    /contact - Entre em contato comigo.
+    Digite /comandos para descobrir mais sobre mim.
+    Digite /ajuda caso detecte algum erro.
 
 🚀 ##Vamos Conectar!
 
