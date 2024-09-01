@@ -5,7 +5,10 @@ const commands = {
      */
     '/cursos': () => 'Lista de Cursos: HTML, CSS, JavaScript, PHP, Python',
     '/ajuda': () => 'Comandos disponíveis: /cursos, /github, /curriculo',
+    '/hard skills': () => 'Proficiência  em ingles, curso tecnico em desenvolvimento de sistemas, curso e pacote office.',
     '/github': () => 'https://github.com/ThiagoCabralWasem',
+    '/github gist': () => 'https://gist.github.com/ThiagoCabralWasem',
+
     '/curriculo': () => {
       const link = '../archives/curriculum.pdf'; // caminho para o arquivo ou o link
       const a = document.createElement('a');
