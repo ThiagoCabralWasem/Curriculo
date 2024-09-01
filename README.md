@@ -1,4 +1,4 @@
-💼 #Thiago's Portfolio
+#💼 Thiago's Portfolio
 
 👋 **Bem-vindo ao meu portfólio!**
 
